@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+
+	<header>
+		<title>JavaScript Color Selector!</title>
+		<div id="banner">
+			<h1>JavaScript Color Picker</h1>
+		</div>
+	</header>
+</head>
+<body>
+	<div class="container">
+		<canvas id="color-picker"></canvas>
+		<div class="info">
+			<h3>Selected Color</h3>
+			<div class="selected"></div>
+			<h5>Color Information:</h5>
+			<span>Hex: <span id="selected-hex-info"> </span></span>
+			<span>RGB: <span id="selected-rgb-info"></span></span>
+			<button id="add-button">Save</button>
+		</div>
+		<div class="info">
+			<h3>Added Colors</h3>
+			<h5>Your Selected Colors:</h5>
+			<span id="added-colors"></span>
+			<button id="clear-colors">Clear</button>
+			<h5>Save Color Preset to Clipboard:</h5>
+			<button id="copy-color-preset">Copy</button>
+		</div>
+		<div class="info">
+			<h3>Lookup Hex Color: </h3>
+			<input id="search-input" type="text" placeholder="(#)RRGGBB" />
+			<button id="search-button">Search</button>
+			<span id="searched-color"></span>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+</body>
